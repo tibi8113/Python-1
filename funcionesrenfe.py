@@ -2,6 +2,7 @@
 mizona=1
 origen="Irun"
 billete=""
+destino=""
 
 zonas = {
             1 : ["Irun", "Ventas", "Renteria", "Pasaia"],
@@ -10,9 +11,11 @@ zonas = {
             4 : ["Tolosa","Ordizia", "Ormaiztegi", "Zumarraga"]
         }
 
-precios = {"ida": [1.9, 1.95, 2.10, 2.20],
+precios = {
+            "ida": [1.9, 1.95, 2.10, 2.20],
             "i/v": [2.75, 2.90, 3.50, 3.75],
-            "mensual": [40, 44, 48, 52]}
+            "mensual": [40, 44, 48, 52]
+            }
 
 def imprimir():
     print("Que billete desea coger?:")
@@ -44,11 +47,7 @@ def mi_num_zona(zona_dest):
     print(precios)
 
 def mi_precio(precios):
-    for z, p in precios.items():
-        for d in p:
-            if d == precios:
-                zona_dest = z
-    return zona_dest
+    precios[destino][zonas]
 
 
 

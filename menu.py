@@ -2,7 +2,7 @@ import funcionesrenfe as fr
 
 
 """ menu principal """
-
+precios=0
 zona_dest=0
 """ imprimo el menu """
 fr.imprimir()
