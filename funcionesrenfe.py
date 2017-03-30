@@ -17,15 +17,18 @@ precios = {
             "mensual": [40, 44, 48, 52]
             }
 
-def imprimir():
-    print("Que billete desea coger?:")
 
 def billete_bi(billete):
-    if billete == "a":
+    billete = b
+
+    if b == "a":
+        billete="ida"
         print("Has seleccionado ida")
-    elif billete == "b":
+    elif b == "b":
+        billete="i/v"
         print("Has seleccionado ida y vuelta")
-    elif billete == "c":
+    elif b == "c":
+        billete="mensual"
         print("Has seleccionado mensual")
     else:
         print("Error")
@@ -46,64 +49,7 @@ def mi_num_zona(zona_dest):
     precios=zona_dest-mizona
     print(precios)
 
-def mi_precio(precios):
-    precios[destino][zonas]
-
-
-
-
-
-
-
-
-
-
-
-
-""" jdjjdjdjd
-
-def valor(destinos):
-    if billete=="a":
-        if destinos=="Renteria":
-            print("Su billete cuesta 1,50 euros")
-        elif destinos=="Herrera":
-            print("Su billete cuesta 1,80 euros")
-        elif destinos=="Intxaurrondo":
-            print("Su billete cuesta 2 euros")
-        elif destinos=="Donostia":
-            print("Su billete cuesta 2,15 euros")
-        elif destinos=="Andoain":
-            print("Su billete cuesta 2,30 euros")
-        else:
-            print("Error")
-
-
-def valor_iv():
-    if billete=="b":
-        if destinos=="Renteria":
-            print("Su billete cuesta 3 euros")
-        elif destinos=="Herrera":
-            print("Su billete cuesta 3,60 euros")
-        elif destinos=="Intxaurrondo":
-            print("Su billete cuesta 4 euros")
-        elif destinos=="Donostia":
-            print("Su billete cuesta 4,30 euros")
-        elif destinos=="Andoain":
-            print("Su billete cuesta 4,60 euros")
-        else:
-            print("Error")
-
-def valor_men():
-    if billete=="c":
-        if destinos=="Renteria":
-            print("Su billete cuesta 40 euros")
-        elif destinos=="Herrera":
-            print("Su billete cuesta 42 euros")
-        elif destinos=="Intxaurrondo":
-            print("Su billete cuesta 44 euros")
-        elif destinos=="Donostia":
-            print("Su billete cuesta 46 euros")
-        elif destinos=="Andoain":
-            print("Su billete cuesta 48 euros")
-        else:
-            print("Error") """
+def mi_precio():
+    zonadestino = mi_zona(destino)
+    zona = abs(mizona - zonadestino)
+    print(precios[billete][zonas])
