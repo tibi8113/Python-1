@@ -19,7 +19,7 @@ precios = {
 
 
 def billete_bi(billete):
-    self billete = b
+    billete = b
 
     if b == "a":
         billete="ida"
