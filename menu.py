@@ -8,10 +8,19 @@ zona_dest=0
 print("Que billete desea coger?:")
 
 """ guardo la opcion selecionada """
-fr.billete=input("a) ida" + "\n" +" b) ida y vuelta "+ "\n" +" c)mensual "+ "\n")
+b = input("a) ida" + "\n" +" b) ida y vuelta "+ "\n" +" c) mensual "+ "\n")
 
-""" imprimo el tipo de billete que ha seleccionado """
-fr.billete_bi(fr.billete)
+if b == "a":
+    billete="ida"
+    print("Has seleccionado ida")
+elif b == "b":
+    billete="i/v"
+    print("Has seleccionado ida y vuelta")
+elif b == "c":
+    billete="mensual"
+    print("Has seleccionado mensual")
+else:
+    print("Error")
 
 """ muestro los destinos """
 fr.print_zonas()
@@ -29,15 +38,4 @@ print(zona_dest)
 fr.mi_num_zona(zona_dest)
 
 """precio"""
-fr.mi_precio()
-
-
-
-
-
-
-
-
-
-
-
+print("El precio es "+ str(fr.mi_precio()))

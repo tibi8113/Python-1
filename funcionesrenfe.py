@@ -16,26 +16,11 @@ precios = {
             "i/v": [2.75, 2.90, 3.50, 3.75],
             "mensual": [40, 44, 48, 52]
             }
-
-
-def billete_bi(billete):
-    billete = b
-
-    if b == "a":
-        billete="ida"
-        return("Has seleccionado ida")
-    elif b == "b":
-        billete="i/v"
-        return("Has seleccionado ida y vuelta")
-    elif b == "c":
-        billete="mensual"
-        return("Has seleccionado mensual")
-    else:
-        return("Error")
+    
 
 def print_zonas():
     for z, v in zonas.items():
-        return(v)
+        print(v)
 
 """ z zonas, p todo el array de los pueblos, d cada destino """
 def mi_zona(destino):
@@ -47,9 +32,9 @@ def mi_zona(destino):
 
 def mi_num_zona(zona_dest):
     precios=zona_dest-mizona
-    return(precios)
+    return precios
 
 def mi_precio():
     zonadestino = mi_zona(destino)
     zona = abs(mizona - zonadestino)
-    return(precios[billete][zonas])
+    return precios[billete][zona]
