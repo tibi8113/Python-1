@@ -5,7 +5,7 @@ import funcionesrenfe as fr
 precios=0
 zona_dest=0
 """ imprimo el menu """
-fr.imprimir()
+print("Que billete desea coger?:")
 
 """ guardo la opcion selecionada """
 fr.billete=input("a) ida" + "\n" +" b) ida y vuelta "+ "\n" +" c)mensual "+ "\n")
