@@ -17,7 +17,6 @@ precios = {
             "mensual": [40, 44, 48, 52]
             }
     
-
 def print_zonas():
     for z, v in zonas.items():
         print(v)
