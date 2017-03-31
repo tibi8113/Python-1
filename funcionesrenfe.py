@@ -32,7 +32,7 @@ def mi_zona(destino):
 
 def mi_num_zona(zona_dest):
     precios=zona_dest-mizona
-    return(precios)
+    return (precios)
 
 def mi_precio():
     zonadestino = mi_zona(destino)
