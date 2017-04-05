@@ -1,6 +1,4 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-       
-		$(document).ready( //siempre. para seleccionar objetos $... siempre estas dos primeras lineas para empezar
+       		$(document).ready( //siempre. para seleccionar objetos $... siempre estas dos primeras lineas para empezar
                 function(){     //estas dos lineas
                       $("#idaClick").click(
                       		function(){
