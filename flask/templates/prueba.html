@@ -3,89 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Botones de renfe</title>
-	<style>
-*{
-	font-family: century gothic;
-}
-
-	li{
-		width: 200px;
-		height: 100px;
-		background-color: lightblue;
-		color: brown;
-		list-style-type: none;
-		border-radius: 5px;
-		text-align: center;
-		line-height: 100px;
-		font-size: 16px;
-		margin: 0 auto;
-	}
-
-	ul li a{
-		color: brown;
-		list-style-type: none;
-		text-decoration: none;
-	}
-
-	ul li a:hover{
-		list-style-type: none;
-		color: white;
-	}
-
-	#texto{
-		width: 300px;
-		text-align: center;
-		line-height: 100px;
-		margin-left: 20px;
-		margin: 0 auto;
-	}
-
-	#ida{
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-	#iv{
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-	#men{
-		margin-top: 10px;
-		margin-bottom: 10px;
-	}
-
-	</style>
-
+	<link rel="stylesheet" type="text/css" href="/static/estilos.css" />
+	<script type="text/javascript" src="/static/botones.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript">
-		$(document).ready( //siempre. para seleccionar objetos $... siempre estas dos primeras lineas para empezar
-                function(){     //estas dos lineas
-                      $("#idaClick").click(
-                      		function(){
-    							$("#ida").fadeTo(1000, 0.4);
-    							alert('Ha seleccionado billete de ida');
-    						}	
-
-                    );//click1
-
-                      $("#ivClick").click(
-                      		function(){
-    							$("#iv").fadeTo(1000, 0.4);
-    							alert('Ha seleccionado billete de ida y vuelta');
-    						}	
-
-                    );//click2
-
-                      $("#menClick").click(
-                      		function(){
-    							$("#men").fadeTo(1000, 0.4);
-    							alert('Ha seleccionado el billete mensual');
-    						}	
-
-                    );//click3
-
-                  }//primera funcion despues de ready
-                );//ready
-	</script>
 </head>
 
 <body>

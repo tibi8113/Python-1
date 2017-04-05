@@ -1,0 +1,48 @@
+*{
+	font-family: century gothic;
+}
+
+	li{
+		width: 200px;
+		height: 100px;
+		background-color: lightblue;
+		color: brown;
+		list-style-type: none;
+		border-radius: 5px;
+		text-align: center;
+		line-height: 100px;
+		font-size: 16px;
+		margin: 0 auto;
+	}
+
+	ul li a{
+		color: brown;
+		list-style-type: none;
+		text-decoration: none;
+	}
+
+	ul li a:hover{
+		list-style-type: none;
+		color: white;
+	}
+
+	#texto{
+		width: 300px;
+		text-align: center;
+		line-height: 100px;
+		margin-left: 20px;
+		margin: 0 auto;
+	}
+
+	#ida{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#iv{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#men{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
