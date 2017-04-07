@@ -13,9 +13,9 @@ def principal():
 def hello(billete):
     return "Has seleccionado la opción: " + billete
 
-@app.route("/opc/<billete>/destinos")
+@app.route("/destinos")
 def destinos():
-    return fr.print_zonas
+    return fr.print_dest()
 
 if __name__ == "__main__":
     app.run()

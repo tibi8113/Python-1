@@ -30,6 +30,13 @@ def mi_zona(destino):
                 zona_dest = z
     return zona_dest
 
+def print_dest():
+    dest=[]
+    for z, p in zonas.items():
+        for s in p:
+            dest.append(s)
+    return dest
+
 def mi_num_zona(zona_dest):
     precios=zona_dest-mizona
     return (precios)
