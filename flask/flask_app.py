@@ -1,6 +1,6 @@
 from flask import Flask
 from flask import render_template
-
+import funcionesrenfe as fr
 
 app = Flask(__name__)
 app.debug = True
@@ -13,6 +13,9 @@ def principal():
 def hello(billete):
     return "Has seleccionado la opción: " + billete
 
+@app.route("/opc/<billete>/destinos")
+def destinos():
+    return fr.print_zonas
 
 if __name__ == "__main__":
     app.run()
