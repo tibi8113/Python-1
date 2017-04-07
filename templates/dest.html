@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Botones de renfe</title>
+	<link rel="stylesheet" type="text/css" href="../static/estilos.css" />
+	<!--<script type="text/javascript" src="../static/botones.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	Has seleccionado la opción: {{ billete }}
+    {% for s in estaciones %}
+        <form action="/precio/{{ s }}">
+            <input type="submit" value="{{ s }}" class="boton_station"></input><br>
+        </form>
+    {% endfor %} 
+</body>
+</html>
