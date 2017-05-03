@@ -17,7 +17,6 @@ precios = {
             "mensual": [40, 44, 48, 52]
             }
 
-
 def print_zonas():
     for z, v in zonas.items():
         print(v)
@@ -35,6 +34,7 @@ def print_dest():
     for z, p in zonas.items():
         for s in p:
             dest.append(s)
+    print("dfjwfhfhdf")
     return dest
 
 def mi_num_zona(zona_dest):

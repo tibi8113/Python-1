@@ -22,7 +22,7 @@ elif b == "c":
 else:
     print("Error")
 
-
+print("-------------------")
 """ muestro los destinos """
 fr.print_zonas()
 

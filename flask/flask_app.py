@@ -15,7 +15,7 @@ def hello(billete):
 
 @app.route("/destinos")
 def destinos():
-    return fr.print_dest()
+    return fr.print_zonas()
 
 if __name__ == "__main__":
     app.run()
