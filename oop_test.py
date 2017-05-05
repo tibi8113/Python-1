@@ -1,5 +1,5 @@
 class Car():
-    def __init__(self, make, model, year, color):
+    def __init__(self, make, model, year, color='red'):
         self.make = make
         self.model = model
         self.year = year
@@ -32,18 +32,74 @@ class Car():
         else:
             print("The tank won't hold that much.")
 
+class ElectricCar(Car):
+    """A simple model of an electric car."""
+
+    def __init__(self, make, model, year):
+        """Initialize an electric car."""
+        super().__init__(make, model, year)
+
+        # Attributes specific to electric cars.
+        # Battery capacity in kWh.
+        self.battery_size = 70
+        # Charge level in %.
+        self.charge_level = 0
+
+class WareHouse():
+    '''almacen de coches'''
+    def __init__(self, name):
+        self.name = name
+        #lista de coches
+        self.coches = []
+
+    def add_car(self, coche):
+        '''añadimos un coche al almacen'''
+        self.coches.append(coche)
+
+    def rm_car(self, coche):
+        '''borramos un coche'''
+        self.coches.remove(coche)
+
 """ crear los objetos """
 mycar1 = Car('audi','a4','2010', 'green')
 mycar2 = Car('bmw','x5','2013', 'yellow')
 mycar3 = Car('seat','ibiza','2002', 'blue')
+myElectricCar = Car('Tesla', 'S', 2016)
 
+'''creamos el almacen1'''
+almacen1 = WareHouse ('al1')
+almacen1.add_car(mycar1)
+'''imprimo el nombre del almacen'''
+print(almacen1.name)
+
+'''imprimo todos los coches del almacen'''
+for car in almacen1.coches:
+    print(coche)
 #print("Marca: "+mycar1.make)
 #print("Modelo: "+mycar1.model)
 #print("Año: "+mycar1.year)
 
 """ modificar atributos """
 mycar1.year = 2016
-mycar1.add_fuel(150)
+#mycar1.add_fuel(150)
 #print(mycar1.year)
 #print(mycar1.fill_tank())
-print(mycar1.fuel_level)
+#print(mycar1.fuel_level)
+
+''' lista de coches '''
+lista_coches = []
+lista_coches.append(mycar1)
+lista_coches.append(mycar2)
+
+'''print de todos los coches'''
+#for coche in lista_coches:
+#    print(coche)
+
+'''te imprime la cantidad de coches que hay en la lista'''
+#print(str(len(lista_coches)))
+
+'''si hay mas de un coche o si no hay'''
+#if len(lista_coches) > 0:
+#    print("hay coches")
+#else:
+#    print("no hay coches")
