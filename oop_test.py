@@ -55,6 +55,10 @@ class WareHouse():
     def add_car(self, coche):
         '''añadimos un coche al almacen'''
         self.coches.append(coche)
+        make = input ('Vamos a añadir tu coche, dime el nombre: ')
+        model = input ('dime el modelo: ')
+        year = input ('dime el año: ')
+        print("El coche que has guardado es un: " + make + " " + model + " " + year)
 
     def rm_car(self, coche):
         '''borramos un coche'''
@@ -72,9 +76,14 @@ almacen1.add_car(mycar1)
 '''imprimo el nombre del almacen'''
 print(almacen1.name)
 
+'''vamos a añadir un coche'''
+print(almacen1.add_car)
+
 '''imprimo todos los coches del almacen'''
 for car in almacen1.coches:
-    print(coche)
+    print(car)
+
+
 #print("Marca: "+mycar1.make)
 #print("Modelo: "+mycar1.model)
 #print("Año: "+mycar1.year)
