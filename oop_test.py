@@ -73,6 +73,7 @@ myElectricCar = Car('Tesla', 'S', 2016)
 '''creamos el almacen1'''
 almacen1 = WareHouse ('al1')
 almacen1.add_car(mycar1)
+
 '''imprimo el nombre del almacen'''
 print(almacen1.name)
 

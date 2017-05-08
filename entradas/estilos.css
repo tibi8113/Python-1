@@ -1,0 +1,74 @@
+*{
+margin: 0;
+}
+
+header{
+    background-color: lightseagreen;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: lightgoldenrodyellow;
+    margin: 0 auto;
+}
+
+ul{
+   margin-left: 450px;
+   padding-top: 20px;
+}
+
+ul li{
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    background-color: lightcoral;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    
+    
+}
+
+ul li a:hover{
+
+}
+
+section{
+    width: 100%;
+}
+
+#artistas{
+   
+    background-color: lightsalmon;
+    height: 600px;
+}
+
+.foto{
+    width: 500px;
+    height: 200px;
+    margin: 30px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background-color: lightpink;
+    line-height: 170px;
+    font-family: verdana;
+}
